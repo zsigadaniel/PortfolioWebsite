@@ -141,7 +141,7 @@ header .img_text h1 {
 }
 
 .projects .fruits .fruitsImg {
-  background-image: url(/images/fruits.png);
+  background-image: url(fruits.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ header .img_text h1 {
 }
 
 .projects .twitter .twitterImg {
-  background-image: url(/images/twitterInspired.png);
+  background-image: url(twitterInspired.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
