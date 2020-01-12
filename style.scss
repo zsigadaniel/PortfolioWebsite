@@ -29,6 +29,12 @@
         }
     }
     
+    @mixin resize3 {
+        @media screen and (min-width: 1400px) {
+            @content
+        }
+    }
+    
     // Header
     header {
         // Header and button container
@@ -210,19 +216,138 @@
                 }
             }
         }
+        // Third project
+        .multiplePages {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                width: 90%;
+            }
+            h2 {
+                margin-top: $standardMargin;
+            }
+            .pagesImg {
+                background-image: url(multiplePages.png);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .cover {
+                    background: rgba(54, 36, 36, 0.308);
+                    padding-top: 40%;
+                    h3 {
+                        color: color(mainColorLight);
+                        opacity: 0;
+                    }
+                }
+                .cover:hover {
+                    background: rgba(48, 31, 31, 0.459);
+                    h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                .dark-text {
+                    color: color(mainColorDark);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                a:hover {
+                    color: color(cool-blue);
+                }
+            }
+        }
+        // Forth project
+        .weabo20 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                width: 90%;
+            }
+            h2 {
+                margin-top: $standardMargin;
+            }
+            .weabImg {
+                background-image: url(webo20.png);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .cover {
+                    background: rgba(54, 36, 36, 0.308);
+                    padding-top: 40%;
+                    h3 {
+                        color: color(mainColorLight);
+                        opacity: 0;
+                    }
+                }
+                .cover:hover {
+                    background: rgba(48, 31, 31, 0.459);
+                    h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                .dark-text {
+                    color: color(mainColorDark);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                a:hover {
+                    color: color(cool-blue);
+                }
+            }
+        }
+        //Project by 2 wrappers
+        .firstSecond {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .thirdForth {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
     }
     
-    @include resize2 {
+    @include resize3 {
         .projects {
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .fruits {
                 width: 700px;
             }
             .twitter {
                 width: 700px;
                 margin-top: 0;
+            }
+            .multiplePages {
+                width: 700px;
+            }
+            .weabo20 {
+                width: 700px;
+            }
+            .firstSecond {
+                display: flex;
+                flex-direction: row;
+            }
+            .thirdForth {
+                display: flex;
+                flex-direction: row;
             }
         }
     }
