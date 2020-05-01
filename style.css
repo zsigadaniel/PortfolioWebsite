@@ -114,7 +114,8 @@ header .img_text h1 {
   text-align: center;
 }
 
-.projects .fruits {
+.projects .QuatroLife {
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,57 +132,58 @@ header .img_text h1 {
   text-decoration: none;
 }
 
-.projects .fruits a {
+.projects .QuatroLife a {
   text-decoration: none;
   width: 90%;
 }
 
-.projects .fruits h2 {
+.projects .QuatroLife h2 {
   margin-top: 10px;
 }
 
-.projects .fruits .fruitsImg {
-  background-image: url(fruits.png);
+.projects .QuatroLife .quatroImg {
+  background-image: url(quatrolife.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.projects .fruits .fruitsImg .cover {
+.projects .QuatroLife .quatroImg .cover {
   background: rgba(54, 36, 36, 0.308);
   padding-top: 40%;
 }
 
-.projects .fruits .fruitsImg .cover h3 {
+.projects .QuatroLife .quatroImg .cover h3 {
   color: whitesmoke;
   opacity: 0;
 }
 
-.projects .fruits .fruitsImg .cover:hover {
+.projects .QuatroLife .quatroImg .cover:hover {
   background: rgba(48, 31, 31, 0.459);
 }
 
-.projects .fruits .fruitsImg .cover:hover h3 {
+.projects .QuatroLife .quatroImg .cover:hover h3 {
   opacity: 1;
 }
 
-.projects .fruits h4 {
+.projects .QuatroLife h4 {
   margin-top: 5px;
 }
 
-.projects .fruits h4 .dark-text {
+.projects .QuatroLife h4 .dark-text {
   color: #313131;
 }
 
-.projects .fruits h4 .dark-text a {
+.projects .QuatroLife h4 .dark-text a {
   text-decoration: none;
 }
 
-.projects .fruits h4 a:hover {
+.projects .QuatroLife h4 a:hover {
   color: #0d80b6;
 }
 
 .projects .twitter {
+  margin-bottom: 10px;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +211,7 @@ header .img_text h1 {
 }
 
 .projects .twitter .twitterImg {
-  background-image: url(twitterInspired.png);
+  background-image: url(tw0tter.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -276,7 +278,7 @@ header .img_text h1 {
 }
 
 .projects .multiplePages .pagesImg {
-  background-image: url(multiplePages.png);
+  background-image: url(pagination.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -343,7 +345,7 @@ header .img_text h1 {
 }
 
 .projects .weabo20 .weabImg {
-  background-image: url(webo20.png);
+  background-image: url(weabo20.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -418,17 +420,41 @@ header .img_text h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .projects .fruits {
+  .projects .QuatroLife {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 700px;
   }
   .projects .twitter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 700px;
     margin-top: 0;
   }
   .projects .multiplePages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 700px;
   }
   .projects .weabo20 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 700px;
   }
   .projects .firstSecond {
@@ -474,7 +500,17 @@ header .img_text h1 {
 }
 
 .contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: 10px;
+}
+
+.contact li p {
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {

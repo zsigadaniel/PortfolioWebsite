@@ -122,7 +122,8 @@
         margin-top: 40px;
         text-align: center;
         // First project
-        .fruits {
+        .QuatroLife {
+            margin-bottom: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -135,8 +136,8 @@
             h2 {
                 margin-top: $standardMargin;
             }
-            .fruitsImg {
-                background-image: url(fruits.png);
+            .quatroImg {
+                background-image: url(quatrolife.png);
                 background-position: top;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -170,6 +171,7 @@
         }
         // Second project
         .twitter {
+            margin-bottom: 10px;
             margin-top: $standardMargin;
             display: flex;
             flex-direction: column;
@@ -184,7 +186,7 @@
                 margin-top: $standardMargin;
             }
             .twitterImg {
-                background-image: url(twitterInspired.png);
+                background-image: url(tw0tter.png);
                 background-position: top;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -231,7 +233,7 @@
                 margin-top: $standardMargin;
             }
             .pagesImg {
-                background-image: url(multiplePages.png);
+                background-image: url(pagination.png);
                 background-position: top;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -278,7 +280,7 @@
                 margin-top: $standardMargin;
             }
             .weabImg {
-                background-image: url(webo20.png);
+                background-image: url(weabo20.png);
                 background-position: top;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -328,17 +330,25 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            .fruits {
+            .QuatroLife {
+                display: flex;
+                justify-content: flex-start;
                 width: 700px;
             }
             .twitter {
+                display: flex;
+                justify-content: flex-start;
                 width: 700px;
                 margin-top: 0;
             }
             .multiplePages {
+                display: flex;
+                justify-content: flex-start;
                 width: 700px;
             }
             .weabo20 {
+                display: flex;
+                justify-content: flex-start;
                 width: 700px;
             }
             .firstSecond {
@@ -364,7 +374,13 @@
             justify-content: space-evenly;
         }
         li {
+            display: flex;
+            justify-content: space-around;
             margin-left: 10px;
+            p {
+                margin-left: 5px;
+                font-weight: bold;
+            }
         }
     }
     

@@ -24,5 +24,3 @@ darkTheme.addEventListener('click', () => {
     }
 
 });
-
-console.log(mainText)
