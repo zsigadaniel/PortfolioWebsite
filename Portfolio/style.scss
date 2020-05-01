@@ -1,0 +1,421 @@
+    // Main settings
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    // Reusebles
+    $standardMargin:10px;
+    $standardPadding:10px;
+    $colors:(mainColorDark:rgb(49, 49, 49), mainColorLight:whitesmoke, cool-blue:rgb(13, 128, 182), cool-red:rgb(212, 92, 92));
+    @function color($color-name) {
+        @return map-get($colors, $color-name);
+    }
+    
+    @mixin resize {
+        @media screen and (min-width: 600px) {
+            @content
+        }
+    }
+    
+    @mixin resize2 {
+        @media screen and (min-width: 900px) {
+            @content
+        }
+    }
+    
+    @mixin resize3 {
+        @media screen and (min-width: 1400px) {
+            @content
+        }
+    }
+    
+    // Header
+    header {
+        // Header and button container
+        .H1_button {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        @include resize {
+            .H1_button {
+                button {
+                    width: 100px;
+                }
+            }
+        }
+        // Welcome
+        h1 {
+            text-align: center;
+            font-size: 5vw;
+            width: 100%;
+            margin-top: 10px;
+            color: color(mainColorDark);
+            text-transform: uppercase;
+        }
+        // Theme button
+        button {
+            padding: 10px;
+            background: color(mainColorDark);
+            border-style: none;
+            color: color(mainColorLight);
+            width: 100px;
+            margin-top: $standardMargin;
+            border-radius: 10px;
+        }
+        button:hover {
+            background: color(cool-blue);
+        }
+        // Image and text container
+        .img_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // Info
+            .introduction {
+                margin-top: $standardMargin;
+                border-bottom: 3px solid color(mainColorDark);
+                border-top: 3px solid color(mainColorDark);
+                border-radius: 10px;
+                p {
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+            // Avatar
+            img {
+                width: 140px;
+                margin-top: $standardMargin;
+                border-radius: 50%;
+            }
+            h1 {
+                padding: 10px;
+            }
+        }
+        @include resize2 {
+            .img_text {
+                h1 {
+                    font-size: 45px;
+                }
+                .welcome {
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    // Project zone
+    .projects {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 40px;
+        text-align: center;
+        // First project
+        .QuatroLife {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                width: 90%;
+            }
+            h2 {
+                margin-top: $standardMargin;
+            }
+            .quatroImg {
+                background-image: url(quatrolife.png);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .cover {
+                    background: rgba(54, 36, 36, 0.308);
+                    padding-top: 40%;
+                    h3 {
+                        color: color(mainColorLight);
+                        opacity: 0;
+                    }
+                }
+                .cover:hover {
+                    background: rgba(48, 31, 31, 0.459);
+                    h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                .dark-text {
+                    color: color(mainColorDark);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                a:hover {
+                    color: color(cool-blue);
+                }
+            }
+        }
+        // Second project
+        .twitter {
+            margin-bottom: 10px;
+            margin-top: $standardMargin;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                width: 90%;
+            }
+            h2 {
+                margin-top: $standardMargin;
+            }
+            .twitterImg {
+                background-image: url(tw0tter.png);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .cover {
+                    background: rgba(54, 36, 36, 0.308);
+                    padding-top: 40%;
+                    h3 {
+                        color: color(mainColorLight);
+                        opacity: 0;
+                    }
+                }
+                .cover:hover {
+                    background: rgba(48, 31, 31, 0.459);
+                    h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                .dark-text {
+                    color: color(mainColorDark);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                a:hover {
+                    color: color(cool-blue);
+                }
+            }
+        }
+        // Third project
+        .multiplePages {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                width: 90%;
+            }
+            h2 {
+                margin-top: $standardMargin;
+            }
+            .pagesImg {
+                background-image: url(pagination.png);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .cover {
+                    background: rgba(54, 36, 36, 0.308);
+                    padding-top: 40%;
+                    h3 {
+                        color: color(mainColorLight);
+                        opacity: 0;
+                    }
+                }
+                .cover:hover {
+                    background: rgba(48, 31, 31, 0.459);
+                    h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                .dark-text {
+                    color: color(mainColorDark);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                a:hover {
+                    color: color(cool-blue);
+                }
+            }
+        }
+        // Forth project
+        .weabo20 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                width: 90%;
+            }
+            h2 {
+                margin-top: $standardMargin;
+            }
+            .weabImg {
+                background-image: url(weabo20.png);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .cover {
+                    background: rgba(54, 36, 36, 0.308);
+                    padding-top: 40%;
+                    h3 {
+                        color: color(mainColorLight);
+                        opacity: 0;
+                    }
+                }
+                .cover:hover {
+                    background: rgba(48, 31, 31, 0.459);
+                    h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                .dark-text {
+                    color: color(mainColorDark);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                a:hover {
+                    color: color(cool-blue);
+                }
+            }
+        }
+        //Project by 2 wrappers
+        .firstSecond {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .thirdForth {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @include resize3 {
+        .projects {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .QuatroLife {
+                display: flex;
+                justify-content: flex-start;
+                width: 700px;
+            }
+            .twitter {
+                display: flex;
+                justify-content: flex-start;
+                width: 700px;
+                margin-top: 0;
+            }
+            .multiplePages {
+                display: flex;
+                justify-content: flex-start;
+                width: 700px;
+            }
+            .weabo20 {
+                display: flex;
+                justify-content: flex-start;
+                width: 700px;
+            }
+            .firstSecond {
+                display: flex;
+                flex-direction: row;
+            }
+            .thirdForth {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    
+    // Footer
+    .contact {
+        margin-top: $standardMargin;
+        margin-bottom: 10px;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        li {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 10px;
+            p {
+                margin-left: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    @include resize {
+        .contact {
+            display: flex;
+            justify-content: center;
+            ul {
+                width: 600px;
+                flex-direction: row;
+            }
+        }
+    }
+    
+    // Dark theme
+    .dark {
+        background: color(mainColorLight);
+        color: color(mainColorDark);
+        border-radius: 10px;
+    }
+    
+    .dark-body {
+        background: color(mainColorDark);
+        color: color(mainColorLight);
+    }
+    
+    .darkLines {
+        margin-top: $standardMargin;
+        border-bottom: 3px solid color(mainColorLight);
+        border-top: 3px solid color(mainColorLight);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .light-text {
+        color: color(mainColorLight);
+    }

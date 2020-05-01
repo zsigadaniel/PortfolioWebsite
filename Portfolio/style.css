@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .H1_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  header .H1_button button {
+    width: 100px;
+  }
+}
+
+header h1 {
+  text-align: center;
+  font-size: 5vw;
+  width: 100%;
+  margin-top: 10px;
+  color: #313131;
+  text-transform: uppercase;
+}
+
+header button {
+  padding: 10px;
+  background: #313131;
+  border-style: none;
+  color: whitesmoke;
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+header button:hover {
+  background: #0d80b6;
+}
+
+header .img_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .img_text .introduction {
+  margin-top: 10px;
+  border-bottom: 3px solid #313131;
+  border-top: 3px solid #313131;
+  border-radius: 10px;
+}
+
+header .img_text .introduction p {
+  text-align: center;
+  padding: 10px;
+}
+
+header .img_text img {
+  width: 140px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+header .img_text h1 {
+  padding: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  header .img_text h1 {
+    font-size: 45px;
+  }
+  header .img_text .welcome h1 {
+    font-size: 30px;
+  }
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.projects .QuatroLife {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.projects .QuatroLife a {
+  text-decoration: none;
+  width: 90%;
+}
+
+.projects .QuatroLife h2 {
+  margin-top: 10px;
+}
+
+.projects .QuatroLife .quatroImg {
+  background-image: url(quatrolife.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects .QuatroLife .quatroImg .cover {
+  background: rgba(54, 36, 36, 0.308);
+  padding-top: 40%;
+}
+
+.projects .QuatroLife .quatroImg .cover h3 {
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.projects .QuatroLife .quatroImg .cover:hover {
+  background: rgba(48, 31, 31, 0.459);
+}
+
+.projects .QuatroLife .quatroImg .cover:hover h3 {
+  opacity: 1;
+}
+
+.projects .QuatroLife h4 {
+  margin-top: 5px;
+}
+
+.projects .QuatroLife h4 .dark-text {
+  color: #313131;
+}
+
+.projects .QuatroLife h4 .dark-text a {
+  text-decoration: none;
+}
+
+.projects .QuatroLife h4 a:hover {
+  color: #0d80b6;
+}
+
+.projects .twitter {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.projects .twitter a {
+  text-decoration: none;
+  width: 90%;
+}
+
+.projects .twitter h2 {
+  margin-top: 10px;
+}
+
+.projects .twitter .twitterImg {
+  background-image: url(tw0tter.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects .twitter .twitterImg .cover {
+  background: rgba(54, 36, 36, 0.308);
+  padding-top: 40%;
+}
+
+.projects .twitter .twitterImg .cover h3 {
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.projects .twitter .twitterImg .cover:hover {
+  background: rgba(48, 31, 31, 0.459);
+}
+
+.projects .twitter .twitterImg .cover:hover h3 {
+  opacity: 1;
+}
+
+.projects .twitter h4 {
+  margin-top: 5px;
+}
+
+.projects .twitter h4 .dark-text {
+  color: #313131;
+}
+
+.projects .twitter h4 .dark-text a {
+  text-decoration: none;
+}
+
+.projects .twitter h4 a:hover {
+  color: #0d80b6;
+}
+
+.projects .multiplePages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.projects .multiplePages a {
+  text-decoration: none;
+  width: 90%;
+}
+
+.projects .multiplePages h2 {
+  margin-top: 10px;
+}
+
+.projects .multiplePages .pagesImg {
+  background-image: url(pagination.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects .multiplePages .pagesImg .cover {
+  background: rgba(54, 36, 36, 0.308);
+  padding-top: 40%;
+}
+
+.projects .multiplePages .pagesImg .cover h3 {
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.projects .multiplePages .pagesImg .cover:hover {
+  background: rgba(48, 31, 31, 0.459);
+}
+
+.projects .multiplePages .pagesImg .cover:hover h3 {
+  opacity: 1;
+}
+
+.projects .multiplePages h4 {
+  margin-top: 5px;
+}
+
+.projects .multiplePages h4 .dark-text {
+  color: #313131;
+}
+
+.projects .multiplePages h4 .dark-text a {
+  text-decoration: none;
+}
+
+.projects .multiplePages h4 a:hover {
+  color: #0d80b6;
+}
+
+.projects .weabo20 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.projects .weabo20 a {
+  text-decoration: none;
+  width: 90%;
+}
+
+.projects .weabo20 h2 {
+  margin-top: 10px;
+}
+
+.projects .weabo20 .weabImg {
+  background-image: url(weabo20.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects .weabo20 .weabImg .cover {
+  background: rgba(54, 36, 36, 0.308);
+  padding-top: 40%;
+}
+
+.projects .weabo20 .weabImg .cover h3 {
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.projects .weabo20 .weabImg .cover:hover {
+  background: rgba(48, 31, 31, 0.459);
+}
+
+.projects .weabo20 .weabImg .cover:hover h3 {
+  opacity: 1;
+}
+
+.projects .weabo20 h4 {
+  margin-top: 5px;
+}
+
+.projects .weabo20 h4 .dark-text {
+  color: #313131;
+}
+
+.projects .weabo20 h4 .dark-text a {
+  text-decoration: none;
+}
+
+.projects .weabo20 h4 a:hover {
+  color: #0d80b6;
+}
+
+.projects .firstSecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.projects .thirdForth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .QuatroLife {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 700px;
+  }
+  .projects .twitter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 700px;
+    margin-top: 0;
+  }
+  .projects .multiplePages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 700px;
+  }
+  .projects .weabo20 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 700px;
+  }
+  .projects .firstSecond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .projects .thirdForth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10px;
+}
+
+.contact li p {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact ul {
+    width: 600px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.dark {
+  background: whitesmoke;
+  color: #313131;
+  border-radius: 10px;
+}
+
+.dark-body {
+  background: #313131;
+  color: whitesmoke;
+}
+
+.darkLines {
+  margin-top: 10px;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.light-text {
+  color: whitesmoke;
+}
+/*# sourceMappingURL=style.css.map */
