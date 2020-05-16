@@ -139,6 +139,10 @@ header .img_text h1 {
   margin-top: 10px;
 }
 
+.comonClass p {
+  width: 90%;
+}
+
 .comonClass .projectImg {
   background-position: top;
   background-size: cover;
