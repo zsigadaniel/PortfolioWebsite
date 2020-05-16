@@ -1,3 +1,4 @@
+//Variables
 const button = document.querySelectorAll('.button h3');
 const darkTheme = document.querySelector('.darkTheme');
 const body = document.querySelector('body');
@@ -5,6 +6,7 @@ const introduction = document.querySelector('.introduction');
 const links = document.querySelectorAll('.dark-text');
 const mainText = document.querySelectorAll('h1');
 
+//Theme controller
 darkTheme.addEventListener('click', () => {
     links.forEach(link => {
         link.classList.toggle('dark-text');

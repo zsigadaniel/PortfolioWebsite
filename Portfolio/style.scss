@@ -12,6 +12,7 @@
     // Reusebles
     $standardMargin:10px;
     $standardPadding:10px;
+    $widthLink:80%;
     $colors:(mainColorDark:rgb(49, 49, 49), mainColorLight:whitesmoke, cool-blue:rgb(13, 128, 182), cool-red:rgb(212, 92, 92));
     @function color($color-name) {
         @return map-get($colors, $color-name);
@@ -79,6 +80,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-bottom: 15px;
             // Info
             .introduction {
                 margin-top: $standardMargin;
@@ -90,9 +92,17 @@
                     padding: 10px;
                 }
             }
+            .skillset {
+                text-align: center;
+                margin-top: 10px;
+                li {
+                    list-style: none;
+                }
+            }
             // Avatar
             img {
-                width: 140px;
+                max-width: 7vw;
+                min-width: 100px;
                 margin-top: $standardMargin;
                 border-radius: 50%;
             }
@@ -103,7 +113,7 @@
         @include resize2 {
             .img_text {
                 h1 {
-                    font-size: 45px;
+                    font-size: 35px;
                 }
                 .welcome {
                     h1 {
@@ -114,255 +124,91 @@
         }
     }
     
-    // Project zone
-    .projects {
+    //Controls projects style
+    .comonClass {
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
-        list-style: none;
-        margin-top: 40px;
-        text-align: center;
-        // First project
-        .QuatroLife {
-            margin-bottom: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        a {
             text-decoration: none;
-            a {
-                text-decoration: none;
-                width: 90%;
-            }
-            h2 {
-                margin-top: $standardMargin;
-            }
-            .quatroImg {
-                background-image: url(quatrolife.png);
-                background-position: top;
-                background-size: cover;
-                background-repeat: no-repeat;
-                .cover {
-                    background: rgba(54, 36, 36, 0.308);
-                    padding-top: 40%;
-                    h3 {
-                        color: color(mainColorLight);
-                        opacity: 0;
-                    }
-                }
-                .cover:hover {
-                    background: rgba(48, 31, 31, 0.459);
-                    h3 {
-                        opacity: 1;
-                    }
-                }
-            }
-            h4 {
-                margin-top: 5px;
-                .dark-text {
-                    color: color(mainColorDark);
-                    a {
-                        text-decoration: none;
-                    }
-                }
-                a:hover {
-                    color: color(cool-blue);
-                }
-            }
+            width: $widthLink;
         }
-        // Second project
-        .twitter {
-            margin-bottom: 10px;
+        h2 {
             margin-top: $standardMargin;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            a {
-                text-decoration: none;
-                width: 90%;
-            }
-            h2 {
-                margin-top: $standardMargin;
-            }
-            .twitterImg {
-                background-image: url(tw0tter.png);
-                background-position: top;
-                background-size: cover;
-                background-repeat: no-repeat;
-                .cover {
-                    background: rgba(54, 36, 36, 0.308);
-                    padding-top: 40%;
-                    h3 {
-                        color: color(mainColorLight);
-                        opacity: 0;
-                    }
-                }
-                .cover:hover {
-                    background: rgba(48, 31, 31, 0.459);
-                    h3 {
-                        opacity: 1;
-                    }
+        }
+        .projectImg {
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .cover {
+                background: rgba(54, 36, 36, 0.308);
+                padding-top: 40%;
+                h3 {
+                    color: color(mainColorLight);
+                    opacity: 0;
                 }
             }
-            h4 {
-                margin-top: 5px;
-                .dark-text {
-                    color: color(mainColorDark);
-                    a {
-                        text-decoration: none;
-                    }
-                }
-                a:hover {
-                    color: color(cool-blue);
+            .cover:hover {
+                background: rgba(48, 31, 31, 0.459);
+                h3 {
+                    opacity: 1;
                 }
             }
         }
-        // Third project
-        .multiplePages {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            a {
-                text-decoration: none;
-                width: 90%;
-            }
-            h2 {
-                margin-top: $standardMargin;
-            }
-            .pagesImg {
-                background-image: url(pagination.png);
-                background-position: top;
-                background-size: cover;
-                background-repeat: no-repeat;
-                .cover {
-                    background: rgba(54, 36, 36, 0.308);
-                    padding-top: 40%;
-                    h3 {
-                        color: color(mainColorLight);
-                        opacity: 0;
-                    }
-                }
-                .cover:hover {
-                    background: rgba(48, 31, 31, 0.459);
-                    h3 {
-                        opacity: 1;
-                    }
+        h4 {
+            margin-top: 5px;
+            .dark-text {
+                color: color(mainColorDark);
+                a {
+                    text-decoration: none;
                 }
             }
-            h4 {
-                margin-top: 5px;
-                .dark-text {
-                    color: color(mainColorDark);
-                    a {
-                        text-decoration: none;
-                    }
-                }
-                a:hover {
-                    color: color(cool-blue);
-                }
+            a:hover {
+                color: color(cool-blue);
             }
-        }
-        // Forth project
-        .weabo20 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            a {
-                text-decoration: none;
-                width: 90%;
-            }
-            h2 {
-                margin-top: $standardMargin;
-            }
-            .weabImg {
-                background-image: url(weabo20.png);
-                background-position: top;
-                background-size: cover;
-                background-repeat: no-repeat;
-                .cover {
-                    background: rgba(54, 36, 36, 0.308);
-                    padding-top: 40%;
-                    h3 {
-                        color: color(mainColorLight);
-                        opacity: 0;
-                    }
-                }
-                .cover:hover {
-                    background: rgba(48, 31, 31, 0.459);
-                    h3 {
-                        opacity: 1;
-                    }
-                }
-            }
-            h4 {
-                margin-top: 5px;
-                .dark-text {
-                    color: color(mainColorDark);
-                    a {
-                        text-decoration: none;
-                    }
-                }
-                a:hover {
-                    color: color(cool-blue);
-                }
-            }
-        }
-        //Project by 2 wrappers
-        .firstSecond {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10px;
-        }
-        .thirdForth {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10px;
         }
     }
     
-    @include resize3 {
+    // Project zone
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+        grid-auto-rows: auto;
+        list-style: none;
+        text-align: center;
+        margin-bottom: 15px;
+        //Shopping App Demo
+        .shopimg {
+            background-image: url(shoppapp.png);
+        }
+        // Quatro life
+        .quatroImg {
+            background-image: url(quatrolife.png);
+        }
+        // Tw0tter
+        .twitterImg {
+            background-image: url(tw0tter.png);
+        }
+        // Pagination demo
+        .pagesImg {
+            background-image: url(pagination.png);
+        }
+        // Weabo20
+        .weabImg {
+            background-image: url(weabo20.png);
+        }
+    }
+    
+    @include resize2 {
         .projects {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .QuatroLife {
-                display: flex;
-                justify-content: flex-start;
-                width: 700px;
-            }
-            .twitter {
-                display: flex;
-                justify-content: flex-start;
-                width: 700px;
-                margin-top: 0;
-            }
-            .multiplePages {
-                display: flex;
-                justify-content: flex-start;
-                width: 700px;
-            }
-            .weabo20 {
-                display: flex;
-                justify-content: flex-start;
-                width: 700px;
-            }
-            .firstSecond {
-                display: flex;
-                flex-direction: row;
-            }
-            .thirdForth {
-                display: flex;
-                flex-direction: row;
-            }
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         }
     }
     
-    // Footer
+    // Contact
     .contact {
         margin-top: $standardMargin;
         margin-bottom: 10px;
@@ -377,6 +223,7 @@
             display: flex;
             justify-content: space-around;
             margin-left: 10px;
+            margin-bottom: 5px;
             p {
                 margin-left: 5px;
                 font-weight: bold;

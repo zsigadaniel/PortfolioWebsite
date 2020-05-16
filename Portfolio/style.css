@@ -68,6 +68,7 @@ header .img_text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
 }
 
 header .img_text .introduction {
@@ -82,8 +83,18 @@ header .img_text .introduction p {
   padding: 10px;
 }
 
+header .img_text .skillset {
+  text-align: center;
+  margin-top: 10px;
+}
+
+header .img_text .skillset li {
+  list-style: none;
+}
+
 header .img_text img {
-  width: 140px;
+  max-width: 7vw;
+  min-width: 100px;
   margin-top: 10px;
   border-radius: 50%;
 }
@@ -94,386 +105,115 @@ header .img_text h1 {
 
 @media screen and (min-width: 900px) {
   header .img_text h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
   header .img_text .welcome h1 {
     font-size: 30px;
   }
 }
 
+.comonClass {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.comonClass a {
+  text-decoration: none;
+  width: 80%;
+}
+
+.comonClass h2 {
+  margin-top: 10px;
+}
+
+.comonClass .projectImg {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.comonClass .projectImg .cover {
+  background: rgba(54, 36, 36, 0.308);
+  padding-top: 40%;
+}
+
+.comonClass .projectImg .cover h3 {
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.comonClass .projectImg .cover:hover {
+  background: rgba(48, 31, 31, 0.459);
+}
+
+.comonClass .projectImg .cover:hover h3 {
+  opacity: 1;
+}
+
+.comonClass h4 {
+  margin-top: 5px;
+}
+
+.comonClass h4 .dark-text {
+  color: #313131;
+}
+
+.comonClass h4 .dark-text a {
+  text-decoration: none;
+}
+
+.comonClass h4 a:hover {
+  color: #0d80b6;
+}
+
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(90vw, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+  grid-auto-rows: auto;
   list-style: none;
-  margin-top: 40px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
-.projects .QuatroLife {
-  margin-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
+.projects .shopimg {
+  background-image: url(shoppapp.png);
 }
 
-.projects .QuatroLife a {
-  text-decoration: none;
-  width: 90%;
-}
-
-.projects .QuatroLife h2 {
-  margin-top: 10px;
-}
-
-.projects .QuatroLife .quatroImg {
+.projects .quatroImg {
   background-image: url(quatrolife.png);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.projects .QuatroLife .quatroImg .cover {
-  background: rgba(54, 36, 36, 0.308);
-  padding-top: 40%;
-}
-
-.projects .QuatroLife .quatroImg .cover h3 {
-  color: whitesmoke;
-  opacity: 0;
-}
-
-.projects .QuatroLife .quatroImg .cover:hover {
-  background: rgba(48, 31, 31, 0.459);
-}
-
-.projects .QuatroLife .quatroImg .cover:hover h3 {
-  opacity: 1;
-}
-
-.projects .QuatroLife h4 {
-  margin-top: 5px;
-}
-
-.projects .QuatroLife h4 .dark-text {
-  color: #313131;
-}
-
-.projects .QuatroLife h4 .dark-text a {
-  text-decoration: none;
-}
-
-.projects .QuatroLife h4 a:hover {
-  color: #0d80b6;
-}
-
-.projects .twitter {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-
-.projects .twitter a {
-  text-decoration: none;
-  width: 90%;
-}
-
-.projects .twitter h2 {
-  margin-top: 10px;
-}
-
-.projects .twitter .twitterImg {
+.projects .twitterImg {
   background-image: url(tw0tter.png);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.projects .twitter .twitterImg .cover {
-  background: rgba(54, 36, 36, 0.308);
-  padding-top: 40%;
-}
-
-.projects .twitter .twitterImg .cover h3 {
-  color: whitesmoke;
-  opacity: 0;
-}
-
-.projects .twitter .twitterImg .cover:hover {
-  background: rgba(48, 31, 31, 0.459);
-}
-
-.projects .twitter .twitterImg .cover:hover h3 {
-  opacity: 1;
-}
-
-.projects .twitter h4 {
-  margin-top: 5px;
-}
-
-.projects .twitter h4 .dark-text {
-  color: #313131;
-}
-
-.projects .twitter h4 .dark-text a {
-  text-decoration: none;
-}
-
-.projects .twitter h4 a:hover {
-  color: #0d80b6;
-}
-
-.projects .multiplePages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-
-.projects .multiplePages a {
-  text-decoration: none;
-  width: 90%;
-}
-
-.projects .multiplePages h2 {
-  margin-top: 10px;
-}
-
-.projects .multiplePages .pagesImg {
+.projects .pagesImg {
   background-image: url(pagination.png);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.projects .multiplePages .pagesImg .cover {
-  background: rgba(54, 36, 36, 0.308);
-  padding-top: 40%;
-}
-
-.projects .multiplePages .pagesImg .cover h3 {
-  color: whitesmoke;
-  opacity: 0;
-}
-
-.projects .multiplePages .pagesImg .cover:hover {
-  background: rgba(48, 31, 31, 0.459);
-}
-
-.projects .multiplePages .pagesImg .cover:hover h3 {
-  opacity: 1;
-}
-
-.projects .multiplePages h4 {
-  margin-top: 5px;
-}
-
-.projects .multiplePages h4 .dark-text {
-  color: #313131;
-}
-
-.projects .multiplePages h4 .dark-text a {
-  text-decoration: none;
-}
-
-.projects .multiplePages h4 a:hover {
-  color: #0d80b6;
-}
-
-.projects .weabo20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-
-.projects .weabo20 a {
-  text-decoration: none;
-  width: 90%;
-}
-
-.projects .weabo20 h2 {
-  margin-top: 10px;
-}
-
-.projects .weabo20 .weabImg {
+.projects .weabImg {
   background-image: url(weabo20.png);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.projects .weabo20 .weabImg .cover {
-  background: rgba(54, 36, 36, 0.308);
-  padding-top: 40%;
-}
-
-.projects .weabo20 .weabImg .cover h3 {
-  color: whitesmoke;
-  opacity: 0;
-}
-
-.projects .weabo20 .weabImg .cover:hover {
-  background: rgba(48, 31, 31, 0.459);
-}
-
-.projects .weabo20 .weabImg .cover:hover h3 {
-  opacity: 1;
-}
-
-.projects .weabo20 h4 {
-  margin-top: 5px;
-}
-
-.projects .weabo20 h4 .dark-text {
-  color: #313131;
-}
-
-.projects .weabo20 h4 .dark-text a {
-  text-decoration: none;
-}
-
-.projects .weabo20 h4 a:hover {
-  color: #0d80b6;
-}
-
-.projects .firstSecond {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.projects .thirdForth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 900px) {
   .projects {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projects .QuatroLife {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 700px;
-  }
-  .projects .twitter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 700px;
-    margin-top: 0;
-  }
-  .projects .multiplePages {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 700px;
-  }
-  .projects .weabo20 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 700px;
-  }
-  .projects .firstSecond {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .projects .thirdForth {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
 }
 
@@ -506,6 +246,7 @@ header .img_text h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .contact li p {
